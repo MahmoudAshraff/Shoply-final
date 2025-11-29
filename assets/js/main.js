@@ -164,3 +164,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
 /* Expose for debugging */
 window.SHOPLY = { PRODUCTS };
+//
