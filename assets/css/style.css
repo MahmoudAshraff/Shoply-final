@@ -89,12 +89,13 @@ body {
 }
 
 .brand {
+   color:var(--gold);
   font-weight:700;
-  font-size:20px;
+  font-size:100px;
 }
 
 .brand .dot {
-  color:var(--gold);
+  color:var(--purple);
   margin-left:6px;
 }
 
