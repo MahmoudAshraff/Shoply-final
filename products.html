@@ -1,1 +1,98 @@
-<!-- FULL PRODUCTS.HTML HERE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — Totya Shop</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- =============== HEADER =============== -->
+  <header class="header">
+    <div class="container header-row">
+
+      <!-- Logo -->
+      <a href="index.html" class="brand">Totya<span class="dot">.</span></a>
+
+      <!-- Controls -->
+      <div class="controls">
+
+        <!-- Search -->
+        <input type="search"
+               id="searchInput"
+               class="search"
+               placeholder="Search products...">
+
+        <!-- Category Filter -->
+        <div class="selects">
+          <div class="select-wrap">
+            <select id="categoryFilter" class="custom-select">
+              <option value="all">All</option>
+              <option value="helmets">Helmets</option>
+              <option value="jackets">Jackets</option>
+              <option value="accessories">Accessories</option>
+            </select>
+            <span class="select-icon">▼</span>
+          </div>
+        </div>
+
+        <!-- Cart Button -->
+        <button class="cart-btn" id="openCart">Cart</button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =============== SIDEBAR CART =============== -->
+  <aside class="sidebar" id="sidebarCart">
+    <div class="cart-items reveal" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <p class="total">Total: <span id="cartTotal">$0</span></p>
+      <button class="btn primary" onclick="location.href='checkout.html'">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- =============== MAIN CONTENT =============== -->
+  <main class="main container">
+
+    <div class="left-col">
+
+      <!-- Page Title -->
+      <section class="fade-in reveal" style="margin-bottom:20px;">
+        <h1 style="font-size:28px;font-weight:700;">All Products</h1>
+        <p class="lead">Browse our full collection of premium riding gear.</p>
+      </section>
+
+      <!-- Products Grid -->
+      <section>
+        <div class="products-grid fade-in reveal" id="productList">
+          <!-- JS will insert products dynamically -->
+        </div>
+      </section>
+
+      <!-- Pagination -->
+      <div class="pagination fade-in reveal">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- =============== FOOTER =============== -->
+  <footer class="footer" style="padding:40px 0;text-align:center;color:var(--muted)">
+    <p>&copy; 2025 Totya Shop. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cart.js"></script>
+
+</body>
+</html>
